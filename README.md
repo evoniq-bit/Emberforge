@@ -6,6 +6,8 @@ The goal of Emberforge is to provide useful quality-of-life, building and gamepl
 
 Emberforge connects to the running Enshrouded process and allows you to enable or configure individual features directly from its interface.
 
+**Current source version:** `v0.2.15`
+
 > **Development Notice**
 >
 > Emberforge was developed with significant assistance from **OpenAI Codex**.
@@ -182,6 +184,20 @@ The same concept can be used with placeable objects.
 - A running local Enshrouded game session
 
 No Cheat Engine installation or additional trainer software is required.
+
+---
+
+# Source Code
+
+The source code for **Emberforge v0.2.15** is available in this repository for transparency, community review and Nexus Mods security review.
+
+- [Download the v0.2.15 source-code archive](source-archives/Emberforge-v0.2.15-Source-Code.zip)
+- [Build instructions](BUILDING.md)
+- [Third-party notices](THIRD_PARTY.md)
+
+The source archive contains the C# source, WPF resources, hook manifests, automated tests, hook generators, catalog data and the original reference used for Turk645's Glider Flight implementation.
+
+The compiled Emberforge executable, personal settings and session files are not included in the source-code archive.
 
 ---
 
