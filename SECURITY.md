@@ -32,7 +32,7 @@ A detection alone does not necessarily prove that Emberforge is malicious, but u
 
 ## Source Code Availability
 
-The Emberforge source code is publicly available in this repository for:
+The Emberforge source code is being published in this repository for:
 
 - Transparency
 - Community review
