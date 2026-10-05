@@ -1,0 +1,15 @@
+# Emberforge generated/local files
+/Emberforge-v0.2.15-Source/Emberforge.exe
+/Emberforge-v0.2.15-Source/Einstellungen.json
+/Emberforge-v0.2.15-Source/Pruefung.txt
+/Emberforge-v0.2.15-Source/Pruefung.txt.error.txt
+/Emberforge-v0.2.15-Source/Spielkatalog.json
+/Emberforge-v0.2.15-Source/*.log
+
+# Build/debug artifacts
+*.pdb
+.vs/
+
+# Python cache
+__pycache__/
+*.pyc
