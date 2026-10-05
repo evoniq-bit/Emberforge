@@ -1,6 +1,16 @@
 # Building Emberforge v0.2.15
 
-This repository publishes the Emberforge source code for transparency, community review and Nexus Mods security review.
+The complete Emberforge v0.2.15 source code is published in this repository for transparency, community review and Nexus Mods security review.
+
+## Source location
+
+The source package is located at:
+
+`Emberforge-v0.2.15-Source/`
+
+The main application source is inside:
+
+`Emberforge-v0.2.15-Source/Quellcode/`
 
 ## Requirements
 
@@ -8,38 +18,68 @@ This repository publishes the Emberforge source code for transparency, community
 - .NET Framework 4.x
 - 64-bit .NET Framework C# compiler (`csc.exe`)
 - WPF
-- `libzstd.dll` placed inside the `src` directory before building
-- `Emberforge-Logo.png` placed in the project root before building
 
-Visual Studio and Python are **not** required for the normal application build. Python is only required for the development tools in `src/Hook-Generator/`.
+Visual Studio and Python are **not** required for the normal application build.
+
+Python is only required for the development tools inside:
+
+`Emberforge-v0.2.15-Source/Quellcode/Hook-Generator/`
+
+The required native Zstandard dependency is included as:
+
+`Emberforge-v0.2.15-Source/Quellcode/libzstd.dll`
+
+The application logo is included as:
+
+`Emberforge-v0.2.15-Source/Emberforge-Logo.png`
 
 ## Build
 
-Keep the directory structure intact and run PowerShell from the project root:
+Keep the directory structure intact and run PowerShell from the repository root:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\src\Bauen.ps1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Emberforge-v0.2.15-Source\Quellcode\Bauen.ps1
 ```
 
-The build script creates `Emberforge.exe` and copies `libzstd.dll` next to it.
+The build script creates:
 
-## Source archive
+`Emberforge-v0.2.15-Source/Emberforge.exe`
 
-The repository contains a clean source archive for **Emberforge v0.2.15** under:
+and copies `libzstd.dll` next to the executable.
 
-`source-archives/Emberforge-v0.2.15-Source-Code.zip`
+## Source contents
 
-The archive contains the C# source, WPF resources, hook manifests, tests, hook generators, catalog data and license notices. It intentionally does not include the compiled Emberforge executable or personal settings/session files.
+The published source includes:
 
-The native `libzstd.dll` dependency and the application logo are binary/resource files rather than Emberforge source code and are therefore not included in the clean source-code archive.
+- C# application source
+- WPF XAML interface and translations
+- Runtime hook manifests
+- Automated tests
+- Hook generator scripts
+- Building/object catalog data
+- Third-party license notices
+- Turk645 Glider Flight reference
+- Build script
+- Required `libzstd.dll` dependency
+- Emberforge logo resource
+
+The repository does **not** need personal settings or generated test-output files.
 
 ## Self-test
 
-After building, the included automated checks can be run with:
+After building, change into the source folder:
+
+```powershell
+cd .\Emberforge-v0.2.15-Source
+```
+
+Then run:
 
 ```powershell
 .\Emberforge.exe --self-test "$PWD\Pruefung.txt"
 ```
+
+If a self-test fails, Emberforge may create `Pruefung.txt.error.txt`.
 
 Automated checks do not replace in-game testing.
 
@@ -47,10 +87,21 @@ Automated checks do not replace in-game testing.
 
 The Glider Flight feature is based on Turk645's original Glider Flight work from Builder's Companion and has been adapted for the current Enshrouded version and integrated into Emberforge.
 
-The original reference is preserved in `src/Turk-Glider-Flight-Original.txt` inside the source archive.
+The preserved original reference can be found at:
 
-## Third-party dependency
+`Emberforge-v0.2.15-Source/Quellcode/Turk-Glider-Flight-Original.txt`
 
-`libzstd.dll` is a native Zstandard dependency. Its BSD license notice is included as `Zstandard-Lizenz.txt`.
+The adapted generator is located at:
 
-See [THIRD_PARTY.md](THIRD_PARTY.md) for additional third-party information.
+`Emberforge-v0.2.15-Source/Quellcode/Hook-Generator/build_movement_hooks.py`
+
+## Third-party components
+
+`libzstd.dll` is a native Zstandard dependency.
+
+The related license notices are included in the published source folder:
+
+- `Emberforge-v0.2.15-Source/Zstandard-Lizenz.txt`
+- `Emberforge-v0.2.15-Source/Katalog-Format-Lizenz.txt`
+
+See [THIRD_PARTY.md](THIRD_PARTY.md) for additional information.
