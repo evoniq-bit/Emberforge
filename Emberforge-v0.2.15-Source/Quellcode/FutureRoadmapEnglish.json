@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Title": "Character · Planned",
+    "Detail": "New under Character: add XP, additional skill points and infinite breath (test version; diving validation pending). The skill bonus applies while connected to Emberforge.\nPlanned: freeze the rested timer and preserve food/drink buffs.\nStill to investigate: maximum rested bonus and comfort level."
+  },
+  {
+    "Title": "Building / Blocks · Planned",
+    "Detail": "New under Building Blocks: keep building material (test version).\nPlanned: free building as a separate option. Raise the Flame Altar limit to 200; saving/loading still needs checking.\nStill to investigate: placement overlap and building everywhere, including the Shroud."
+  },
+  {
+    "Title": "Crafting · Planned",
+    "Detail": "New under Crafting: keep ingredients (test version for normal and NPC crafting; confirmed in game).\nPlanned: crafting without ingredients and adjustable production speed.\nRecipe unlocks need separate visibility, crafting and persistence tests."
+  },
+  {
+    "Title": "Inventory & Equipment · Planned",
+    "Detail": "New under Inventory & Equipment: infinite durability, quantity for a chosen quickbar slot 1–8, and maximum stack size per item type up to 50,000.\nThe raised stack limit applies while connected and resets on disconnect or Disable all. Moving, splitting and saving large stacks still need in-game checks."
+  },
+  {
+    "Title": "Combat · Planned",
+    "Detail": "Likely possible: a damage multiplier and one-hit kill. Melee, ranged, magic and target detection need separate tests."
+  },
+  {
+    "Title": "Movement · Planned",
+    "Detail": "New under Character: glider flight with extended pitch range and preserved stamina. Use normal in-game glider controls. No forced altitude lock."
+  },
+  {
+    "Title": "World & Resources · Planned",
+    "Detail": "Good candidates: adjustable plant growth and a loot/resource multiplier.\nStill to investigate: hide visible Shroud fog. The gameplay Shroud zone is a separate research task."
+  }
+]

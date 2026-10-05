@@ -1,0 +1,74 @@
+﻿{ Game   : enshrouded.exe
+  Version:
+  Date   : 2024-04-14
+  Author : Turk
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+
+
+aobscanmodule(GliderFlightAOB,enshrouded.exe,F3 0F 10 05 * * * * f2 0f 11 4c) // should be unique
+alloc(newmem,$1000,GliderFlightAOB)
+
+label(code)
+label(return)
+label(GlideData)
+
+newmem:
+
+code:
+  movss xmm0,[GlideData]
+  jmp return
+  GlideData:
+  dd (float)-1.57 0 0 0
+  readMem(GliderFlightAOB+4,4)
+
+GliderFlightAOB:
+  jmp newmem
+  nop 3
+return:
+registersymbol(GlideData)
+registersymbol(GliderFlightAOB)
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+GliderFlightAOB:
+  db F3 0F 10 05
+  readMem(GlideData+10,4)
+
+unregistersymbol(GliderFlightAOB)
+unregistersymbol(GlideData)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: enshrouded.exe.text+1EF46E
+
+enshrouded.exe.text+1EF433: F3 44 0F 10 80 E0 00 00 00  - movss xmm8,[rax+000000E0]
+enshrouded.exe.text+1EF43C: F3 0F 5C F0                 - subss xmm6,xmm0
+enshrouded.exe.text+1EF440: 45 0F 57 C1                 - xorps xmm8,xmm9
+enshrouded.exe.text+1EF444: F3 44 0F 59 05 8B C4 6F 01  - mulss xmm8,[enshrouded.exe.rdata+BC38D8]
+enshrouded.exe.text+1EF44D: F3 41 0F 58 FF              - addss xmm7,xmm15
+enshrouded.exe.text+1EF452: 48 8B 55 A0                 - mov rdx,[rbp-60]
+enshrouded.exe.text+1EF456: 48 8D 8D B0 06 00 00        - lea rcx,[rbp+000006B0]
+enshrouded.exe.text+1EF45D: E8 AE 3B 0B 00              - call enshrouded.exe.text+2A3010
+enshrouded.exe.text+1EF462: F3 0F 10 85 B4 06 00 00     - movss xmm0,[rbp+000006B4]
+enshrouded.exe.text+1EF46A: 41 0F 2F C2                 - comiss xmm0,xmm10
+// ---------- INJECTING HERE ----------
+enshrouded.exe.text+1EF46E: F3 0F 10 05 86 EF BA 00     - movss xmm0,[enshrouded.exe.rdata+763FC]
+// ---------- DONE INJECTING  ----------
+enshrouded.exe.text+1EF476: 77 12                       - ja enshrouded.exe.text+1EF48A
+enshrouded.exe.text+1EF478: 0F 2F C7                    - comiss xmm0,xmm7
+enshrouded.exe.text+1EF47B: 77 0D                       - ja enshrouded.exe.text+1EF48A
+enshrouded.exe.text+1EF47D: F3 0F 10 05 57 C4 6F 01     - movss xmm0,[enshrouded.exe.rdata+BC38DC]
+enshrouded.exe.text+1EF485: 0F 2F F8                    - comiss xmm7,xmm0
+enshrouded.exe.text+1EF488: 76 03                       - jna enshrouded.exe.text+1EF48D
+enshrouded.exe.text+1EF48A: 0F 28 F8                    - movaps xmm7,xmm0
+enshrouded.exe.text+1EF48D: 48 8B 44 24 40              - mov rax,[rsp+40]
+enshrouded.exe.text+1EF492: F3 41 0F 5C F5              - subss xmm6,xmm13
+enshrouded.exe.text+1EF497: F3 0F 10 1D FD E1 BA 00     - movss xmm3,[enshrouded.exe.rdata+7569C]
+}

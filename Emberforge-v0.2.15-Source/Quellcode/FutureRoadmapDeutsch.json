@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Title": "Charakter · Geplant",
+    "Detail": "Neu unter Charakter: EP hinzufügen, zusätzliche Skillpunkte und unendlicher Atem (Testversion; Tauchtest noch offen). Der Skillbonus gilt während der Verbindung mit Emberforge.\nGeplant: Ausgeruht-Timer einfrieren und Essen-/Trinkbuffs erhalten.\nNoch untersuchen: maximaler Ausgeruht-Bonus und Komfortlevel."
+  },
+  {
+    "Title": "Bauen / Baublöcke · Geplant",
+    "Detail": "Neu unter Baublöcke: Baumaterial nicht verbrauchen (Testversion).\nGeplant: kostenlos bauen als getrennte Option. Flammenaltar-Limit auf maximal 200 erhöhen; konkrete Spielprüfungen gefunden, Speichern/Laden noch prüfen.\nNoch untersuchen: Überschneidungen beim Platzieren und überall bauen, einschließlich Shroud."
+  },
+  {
+    "Title": "Herstellen · Geplant",
+    "Detail": "Neu unter Herstellen: Zutaten nicht verbrauchen (Testversion für normale Rezepte und NPC-Handwerk; vom Nutzer im Spiel bestätigt).\nGeplant: kostenloses Herstellen und einstellbare Produktionsgeschwindigkeit.\nAlle Rezepte: konkrete Rezeptprüfungen gefunden; Sichtbarkeit, tatsächliche Herstellung und Speicherung getrennt prüfen."
+  },
+  {
+    "Title": "Inventar & Ausrüstung · Geplant",
+    "Detail": "Neu unter Inventar & Ausrüstung: Unendliche Haltbarkeit, Stapelmenge für einen gewählten Schnellslot 1–8 und maximale Stapelgröße pro Gegenstandstyp bis 50.000.\nDie erhöhte Stapelgrenze gilt während der Verbindung und wird beim Trennen oder Alles ausschalten zurückgesetzt. Verschieben, Teilen und Speichern großer Stapel weiter im Spiel prüfen."
+  },
+  {
+    "Title": "Kampf · Geplant",
+    "Detail": "Wahrscheinlich machbar: eigener Schadensmultiplikator und One Hit Kill. Nahkampf, Fernkampf, Magie und die Erkennung der richtigen Ziele getrennt testen."
+  },
+  {
+    "Title": "Bewegung · Geplant",
+    "Detail": "Neu unter Charakter: Gleiterflug mit erweitertem Flugwinkel und erhaltener Ausdauer. Nutze die normale Gleitersteuerung im Spiel. Keine erzwungene Höhenhaltung."
+  },
+  {
+    "Title": "Welt & Ressourcen · Geplant",
+    "Detail": "Gute Kandidaten: einstellbares Pflanzenwachstum und Beute-/Ressourcenmultiplikator.\nNoch untersuchen: sichtbaren Shroud-Nebel ausblenden. Die spielmechanische Shroud-Zone bleibt eine eigene Forschungsaufgabe."
+  }
+]
