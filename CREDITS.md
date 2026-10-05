@@ -8,6 +8,8 @@ The original concept and functionality behind overriding normally placeable buil
 
 Builder's Companion was also an important inspiration for other ideas and functionality in Emberforge. Some of those features were rebuilt from the ground up, adapted to current versions of Enshrouded, expanded with additional options, or integrated into Emberforge in a different form.
 
+Emberforge's **Glider Flight** feature is also based on Turk645's original Glider Flight work. The current implementation adapts that idea for the current Enshrouded version and integrates it into Emberforge with player filtering, version checks, stamina preservation and restoration behavior.
+
 For Emberforge, the Building Block Override and Object Override systems in particular have been adapted, rebuilt and expanded into a standalone application with additional functionality such as:
 
 - Material capture
@@ -19,6 +21,7 @@ For Emberforge, the Building Block Override and Object Override systems in parti
 - Object favorites
 - Nearby object scanning
 - Configurable hotkeys
+- Glider Flight
 - Additional building, inventory, crafting and gameplay tools
 
 Even where Emberforge now uses a different implementation or significantly expanded functionality, the influence of Turk645's work should be properly acknowledged.
