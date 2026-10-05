@@ -105,6 +105,9 @@ Object Override allows normally unavailable world objects to be used as replacem
 - **Use Nearby Objects as Replacements**  
   Select an object found by the nearby scanner and activate it as the replacement.
 
+- **Dismantle Overridden Objects (Experimental)**  
+  Allows newly placed overridden fences, doors and other compatible world props to be dismantled normally. This currently applies only to the selected replacement object and is still considered a test feature.
+
 - **Configurable Override Hotkeys**  
   Configure hotkeys for capturing, activating and disabling object overrides.
 
@@ -147,6 +150,14 @@ The required materials must still be present in the crafting interface.
 - **English interface**
 - **German interface**
 - **Configurable hotkeys**
+- **Global in-game hotkeys**  
+  Shortcuts can remain active while either Enshrouded or Emberforge is in the foreground.
+- **Always on Top**  
+  Keep the Emberforge window above other windows.
+- **Save Settings**  
+  Store your language, hotkey and interface preferences for future sessions.
+- **Restart as Administrator**  
+  Restart Emberforge with administrator rights when Enshrouded is running elevated.
 
 ---
 
@@ -188,7 +199,7 @@ Because techniques such as process memory access, memory modification and runtim
 
 This does **not automatically mean that every antivirus detection is a false positive**.
 
-The source code is being published in this repository so that users and platform moderators can inspect how Emberforge works.
+The source code for Emberforge is published in this repository so that users and platform moderators can inspect how Emberforge works.
 
 For more information, see [SECURITY.md](SECURITY.md) and [THIRD_PARTY.md](THIRD_PARTY.md).
 
