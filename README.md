@@ -44,6 +44,9 @@ Emberforge connects to the running Enshrouded process and allows you to enable o
 - **Additional Skill Points**  
   Add temporary bonus skill points while Emberforge is connected. Already unlocked talents are still saved by the game.
 
+- **Glider Flight**  
+  Extends the glider pitch range so the normal glider controls can be used to climb as well as descend. Stamina is preserved for extended flight.
+
 ---
 
 ## Building Blocks
@@ -185,9 +188,9 @@ Because techniques such as process memory access, memory modification and runtim
 
 This does **not automatically mean that every antivirus detection is a false positive**.
 
-The source code is made publicly available so that users and platform moderators can inspect how Emberforge works.
+The source code is being published in this repository so that users and platform moderators can inspect how Emberforge works.
 
-For more information, see [SECURITY.md](SECURITY.md).
+For more information, see [SECURITY.md](SECURITY.md) and [THIRD_PARTY.md](THIRD_PARTY.md).
 
 ---
 
@@ -195,7 +198,9 @@ For more information, see [SECURITY.md](SECURITY.md).
 
 Special thanks to **Turk645**, the original creator of **Builder's Companion**.
 
-The original concept and functionality behind overriding building blocks and placeable objects came from his work. In addition, other parts of Builder's Companion also inspired ideas and functionality that were later rebuilt, adapted or expanded in Emberforge.
+The original concept and functionality behind overriding building blocks and placeable objects came from his work. Other parts of Builder's Companion also inspired ideas and functionality that were later rebuilt, adapted or expanded in Emberforge.
+
+The current **Glider Flight** feature is also based on Turk645's original Glider Flight work and has been adapted for the current Enshrouded version and integrated into Emberforge.
 
 These features and ideas have been adapted, rebuilt, expanded and integrated into Emberforge for current versions of Enshrouded.
 
