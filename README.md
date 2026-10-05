@@ -189,9 +189,15 @@ No Cheat Engine installation or additional trainer software is required.
 
 # Source Code
 
-The source code for **Emberforge v0.2.15** is being prepared for publication in this repository for transparency, community review and Nexus Mods security review.
+The complete source code for **Emberforge v0.2.15** is published in this repository for transparency, community review and Nexus Mods security review.
 
-Build information is already available in [BUILDING.md](BUILDING.md).
+You can find it here:
+
+**[Emberforge-v0.2.15-Source/](Emberforge-v0.2.15-Source/)**
+
+The source folder contains the C# source, WPF interface/resources, hook manifests, automated tests, hook generators, catalog data, the required Zstandard dependency, license notices and the original reference used for Turk645's Glider Flight implementation.
+
+Build instructions are available in [BUILDING.md](BUILDING.md).
 
 ---
 
@@ -209,7 +215,7 @@ Because techniques such as process memory access, memory modification and runtim
 
 This does **not automatically mean that every antivirus detection is a false positive**.
 
-The source code for Emberforge is being prepared for publication in this repository so that users and platform moderators can inspect how Emberforge works.
+The complete source code for Emberforge is published in this repository so that users and platform moderators can inspect how Emberforge works.
 
 For more information, see [SECURITY.md](SECURITY.md) and [THIRD_PARTY.md](THIRD_PARTY.md).
 
